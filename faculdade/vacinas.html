@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beAUpet</title>
+  <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+  <link rel="stylesheet" href="css/vacinas.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+                <div class="logo">
+                    <a href="index.html"><img src="imagens/logo.png" width="50%"></a>
+                </div>
+
+                <div class="cadastrar">
+                    <a href="cadastro.html"><img src="imagens/queromecadastrar.png" width="80%"></a>
+                </div>
+
+                <div class="login">
+                    <img src="imagens/jasoucadastrado.png">
+                    <div class="horizontal">
+                    </div>
+                <!--FORMULÁRIO DE LOGIN-->
+                <form method="post" class="acesso" action="">
+                    <input type="text" class="usuario" required="required" placeholder="E-MAIL/USUÁRIO"/>
+                    <input type="password" class="senha" required="required" placeholder="SENHA"/>
+                    <button class="entrar">
+                        <a href="home.html"><img src="imagens/ok.png" width="70%"></a>
+                    </button>
+                    <div class="esqueci">
+                        <a href="esqueci.html"><img src="imagens/esqueciasenha.png"></a>
+                    </div>
+                </form>
+                </div>
+        </header>
+
+        <div class="menu">
+            <div class="botoes">
+                <a href="vacinas.html"><img src="imagens/menuvacinas.png"></a>
+            </div>
+            <div class="botoes">
+                <a href="blog.html"><img src="imagens/menublog.png"></a>
+            </div>
+            <div class="botoes">
+                <a href="ondeencontrar.html"><img src="imagens/menuondeencontro.png"></a>
+            </div>
+            <div class="botoes">
+                <a href="contato.html"><img src="imagens/menucontato.png"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tabela">
+        <div class="titulo">
+          <h3>Carteirinha de Vacinas</h3>
+        </div>
+        
+        <div class="table-wrapper">
+          <table class="table-users">
+              <th>Nome do Pet</th>
+              <th>Veterinário</th>
+              <th>Vacina</th>
+              <th>Data da Vacina</th>
+              <th>Repetir em</th>
+              <th>Observações</th>
+              <th></th> 
+          </table>
+          <button class="btn btn-add">Adicionar Vacina</button>
+        </div>
+
+        <!-- Add Modal -->
+        <div class="add-modal modal-wrapper">
+          <div class="modal">
+            <div class="modal-header"><h3>Nova Vacina</h3></div>
+            <div class="modal-body">
+              <form class="form" autocomplete="on">
+                <input type="text" name="pet" placeholder="Nome do Pet">
+                <input type="text" name="veterinario" placeholder="Veterinário">
+                <input type="text" name="vacina" placeholder="Nome da Vacina">
+                <input type="date" name="data" placeholder="Data da Vacina">
+                <input type="date" name="proxima" placeholder="Repetir em">
+                <input type="text" name="observacoes" placeholder="Observações">
+                <button class="btn btn-modal">Adicionar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Edit Modal -->
+        <div class="edit-modal modal-wrapper">
+          <div class="modal">
+            <div class="modal-header"><h3>Editar</h3></div>
+            <div class="modal-body">
+              <form class="form" autocomplete="off">
+                <input type="text" name="pet" placeholder="Nome do Pet">
+                <input type="text" name="veterinario" placeholder="Veterinário">
+                <input type="text" name="vacina" placeholder="Nome da Vacina">
+                <input type="date" name="data" placeholder="Data da Vacina">
+                <input type="date" name="proxima" placeholder="Repetir em">
+                <input type="text" name="observacoes" placeholder="Observações">
+                <button class="btn btn-modal">Atualizar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.2/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+     apiKey: "AIzaSyDGy_piMavyzbsobNUjUoVvzZ-R7i64Lcs",
+    authDomain: "carteira-pet.firebaseapp.com",
+    databaseURL: "https://carteira-pet-default-rtdb.firebaseio.com",
+    projectId: "carteira-pet",
+    storageBucket: "carteira-pet.appspot.com",
+    messagingSenderId: "789453291469",
+    appId: "1:789453291469:web:9fee0d3a70469d5d2bce84",
+    measurementId: "G-JCNXQCW29S"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+
+
+      
+      <div class="rodape">
+        Desenvolvido pelos alunos do Centro Universitário FAM<br>
+        Ciência da Computação - 6º Semestre - Grupo RUBY<br>
+        Copyright© 2022
+      </div>
+
+        <script src="js/vacinas.js"></script>
+</body>
+</html>

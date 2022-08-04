@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beAUpet</title>
+  <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+                <div class="logo">
+                    <a href="index.html"><img src="imagens/logo.png" width="50%"></a>
+                </div>
+
+                <div class="cadastrar">
+                    <a href="cadastro.html"><img src="imagens/queromecadastrar.png" width="80%"></a>
+                </div>
+
+                <div class="login">
+                    <img src="imagens/jasoucadastrado.png">
+                    <div class="horizontal">
+                    </div>
+                <!--FORMULÁRIO DE LOGIN-->
+                <form method="post" action="">
+                    <input type="text" class="usuario" required="required" placeholder="E-MAIL/USUÁRIO"/>
+                    <input type="password" class="senha" required="required" placeholder="SENHA"/>
+                    <button class="entrar">
+                        <a href="home.html"><img src="imagens/ok.png" width="70%"></a>
+                    </button>
+                    <div class="esqueci">
+                        <a href="esqueci.html"><img src="imagens/esqueciasenha.png"></a>
+                    </div>
+                </form>
+                </div>
+        </header>
+
+        <div class="menu">
+            <div class="botoes">
+                <a href="vacinas.html"><img src="imagens/menuvacinas.png"></a>
+            </div>
+            <div class="botoes">
+                <a href="blog.html"><img src="imagens/menublog.png"></a>
+            </div>
+            <div class="botoes">
+                <a href="ondeencontrar.html"><img src="imagens/menuondeencontro.png"></a>
+            </div>
+            <div class="botoes">
+                <a href="contato.html"><img src="imagens/menucontato.png"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="imagens/slide1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="imagens/slide2.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="imagens/slide3.jpg" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      
+      <div class="rodape">
+        Desenvolvido pelos alunos do Centro Universitário FAM<br>
+        Ciência da Computação - 6º Semestre - Grupo RUBY<br>
+        Copyright© 2022
+      </div>
+
+        <script src="js/index.js"></script>
+</body>
+</html>

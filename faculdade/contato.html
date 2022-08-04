@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beAUpet</title>
+  <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+
+<body>
+        <div class="container">
+            <header>
+                    <div class="logo">
+                        <a href="index.html"><img src="imagens/logo.png" width="50%"></a>
+                    </div>
+    
+                    <div class="cadastrar">
+                        <a href="cadastro.html"><img src="imagens/queromecadastrar.png" width="80%"></a>
+                    </div>
+    
+                    <div class="login">
+                        <img src="imagens/jasoucadastrado.png">
+                        <div class="horizontal">
+                        </div>
+                    <!--FORMULÁRIO DE LOGIN-->
+                    <form method="post" action="">
+                        <input type="text" class="usuario" required="required" placeholder="E-MAIL/USUÁRIO"/>
+                        <input type="password" class="senha" required="required" placeholder="SENHA"/>
+                        <button class="entrar">
+                            <a href="home.html"><img src="imagens/ok.png" width="70%"></a>
+                        </button>
+                        <div class="esqueci">
+                            <a href="esqueci.html"><img src="imagens/esqueciasenha.png"></a>
+                        </div>
+                    </form>
+                    </div>
+            </header>
+
+            <div class="menu">
+                <div class="botoes">
+                    <a href="vacinas.html"><img src="imagens/menuvacinas.png"></a>
+                </div>
+                <div class="botoes">
+                    <a href="blog.html"><img src="imagens/menublog.png"></a>
+                </div>
+                <div class="botoes">
+                    <a href="ondeencontrar.html"><img src="imagens/menuondeencontro.png"></a>
+                </div>
+                <div class="botoes">
+                    <a href="contato.html"><img src="imagens/menucontato.png"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <main class="centro">
+            <div class="titu">
+                CONTATE-NOS
+            </div>
+    
+            <form id="formu" class="formu" method="post">
+                    <label class="lblfrm">Nome</label>
+                    <input id="nomedono" type='text' name='nomedono' maxlength='40' placeholder="INSERA SEU NOME" required>
+                        
+                    <label class="lblfrm">Email para Retorno do Contato</label><br>
+                    <input id="email" type="email" name="email" maxlength="50" placeholder="INSIRA SEU E-MAIL" required>
+                        
+                    <label class="lblfrm">Comentários</label><br>
+                    <textarea name="comentario" size="35" maxlength="10000" placeholder="DEIXE AQUI SUA DÚVIDA, CRÍTICA, SUGESTÃO OU ELOGIO"></textarea>
+                        
+    
+                    <div class="botoes">
+                        <input type='submit' value="Enviar" >
+                        <input type='reset' value="Limpar">                    
+                    </div>   
+            </form>
+            
+        </main>
+
+
+
+
+
+
+<div class="rodape">
+    Desenvolvido pelos alunos do Centro Universitário FAM<br>
+    Ciência da Computação - 6º Semestre - Grupo RUBY<br>
+    Copyright© 2022
+  </div>
+
+</body>
+</html>
